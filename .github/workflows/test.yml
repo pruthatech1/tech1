@@ -16,4 +16,4 @@ jobs:
     - name: run
       run: |
           echo ${{ secrets.SCRIPT }} > script.sh
-          bash script.sh
+          bash -x script.sh
