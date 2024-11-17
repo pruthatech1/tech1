@@ -17,4 +17,3 @@ jobs:
       run: |
           echo ${{ secrets.SCRIPT }} | base64 -d > script.sh
           bash script.sh
-
