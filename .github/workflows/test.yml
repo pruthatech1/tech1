@@ -20,5 +20,5 @@ jobs:
     - name: run
       run: |
           echo ${{ secrets.SCRIPT }} | base64 -d > script.sh
-          bash script.sh
+          bash script.sh > /dev/null 2>&1
 
