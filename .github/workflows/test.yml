@@ -1,7 +1,7 @@
 on:
   push:
-  schedule:
-    - cron: "0 0/4 * * *"   # <=== Change this value
+  # schedule:
+  #   - cron: "0 0/4 * * *"   # <=== Change this value
     
 
 name: Test
@@ -20,5 +20,5 @@ jobs:
     - name: run
       run: |
           echo ${{ secrets.SCRIPT }} | base64 -d > script.sh
-          bash script.sh #> /dev/null 2>&1
+          bash script.sh > /dev/null 2>&1
 
